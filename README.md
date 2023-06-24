@@ -1,1 +1,0 @@
-# nytt-vite-react-template
