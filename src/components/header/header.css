@@ -1,7 +1,58 @@
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 2px solid #4974f5;
+}
+
+.navbar-col-1,
+.navbar-col-2,
+.navbar-col-3 {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.navbar-col-1 {
+  justify-content: flex-start;
+}
+
+.navbar-col-2 {
+  justify-content: center;
+}
+
+.navbar-col-3 {
+  justify-content: flex-end;
+}
+
+#header-logo {
+  height: 3rem;
+}
+
+.nav-links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+
+.nav-link:hover {
+  transform: scale(1.15);
+  transition: 0.1s;
+}
+
+#settings-button,
+#logout-button {
+  height: 1.5rem;
+}
+
+#settings-button {
+  margin-right: 1rem;
 }

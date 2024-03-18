@@ -5,23 +5,23 @@ import "./header.css";
 export const Header = () => {
   return (
     <div className="header-container">
-      <div>
-        <img src={logo} alt="Logo" style={{ height: "3rem" }} />
+      <div className="navbar-col-1">
+        <img src={logo} alt="Logo" id="header-logo" />
       </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <Link to="/" style={{ margin: "0 1rem" }}>
-          Home
+      <div className="nav-links-wrapper navbar-col-2">
+        <Link className="nav-link" to="/">
+          HOME
         </Link>
-        <Link to="/about" style={{ margin: "0 1rem" }}>
-          About
+        <Link className="nav-link" to="/about">
+          ABOUT
         </Link>
-        <Link to="/contact" style={{ margin: "0 1rem" }}>
-          Contact
+        <Link className="nav-link" to="/contact">
+          CONTACT
         </Link>
       </div>
-      <div>
-        <button style={{ marginRight: "1rem" }}>Settings</button>
-        <button>Logout</button>
+      <div className="navbar-col-3">
+        <button id="settings-button">Settings</button>
+        <button id="logout-button">Logout</button>
       </div>
     </div>
   );
